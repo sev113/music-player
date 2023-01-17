@@ -1,0 +1,135 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: darkslategray;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  margin-top: 10px;
+}
+
+header h1 {
+  color: hotpink;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-shadow: -8px 8px 50px hotpink;
+}
+
+header .subtitle {
+  margin-top: 0;
+  font-size: 10px;
+  /* display: flex;
+  justify-content: space-between; */
+  text-shadow: -8px 8px 50px hotpink;
+}
+
+.subtitle h3 {
+  margin: 0;
+  text-align: right;
+}
+.musicPlayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.playListContainer {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.trackTagClass {
+  font-size: 15px;
+  /* color: hotpink; */
+  padding: 3px;
+  line-height: 30px;
+  border-bottom: 1px solid #000;
+}
+
+.trackTagClass:hover {
+  color: hotpink;
+  cursor: pointer;
+}
+
+.currentPlayingSong {
+  color: hotpink;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+.time .currentTime {
+  font-size: 18px;
+  margin-right: 10px;
+  text-shadow: -5px 5px 30px hotpink;
+}
+.time .duration {
+  font-size: 18px;
+  margin-left: 10px;
+  text-shadow: -5px 5px 30px hotpink;
+}
+
+.time #progressBar {
+  width: 500px;
+  height: 5px;
+  background-color: black;
+}
+.time #currentProgress {
+  width: 0;
+  height: 100%;
+  background-color: hotpink;
+}
+
+.controls {
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.controls .pauseButton {
+  display: none;
+}
+
+.controls .previousButton {
+  margin-right: 30px;
+}
+
+.controls .previousButton:hover {
+  color: hotpink;
+}
+.controls .nextButton {
+  margin-left: 30px;
+}
+.controls .nextButton:hover {
+  color: hotpink;
+}
+.controls .pauseButton:hover {
+  color: hotpink;
+}
+.controls .playButton:hover {
+  color: hotpink;
+}
+
+footer {
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+}
+
+footer h3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: hotpink;
+  text-shadow: 8px 8px 50px hotpink;
+  text-align: center;
+  margin-bottom: 0;
+}
